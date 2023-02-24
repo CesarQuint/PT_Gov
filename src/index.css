@@ -1,0 +1,126 @@
+:root{
+  --Ral:'Raleway';
+  --Play:'Playfair Display';
+  --F1:#FFF;
+  --F2:#F3F3F3;
+  --Headlines:#000;
+  --Body:#3E3C3C;
+  --Subt:#555;
+  --AcCafe:#B29966;
+  --AcVerA:#339E88;
+  --AcAma:#FAE125;
+  --AcRoj:#F25D58;
+  --AcAz:#84d7E6;
+  --AcVio:#B1B3DB;
+}
+/**Tipografias*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family:var(--Ral),sans-serif ;
+  font-weight:500;
+}
+
+/*Bold*/
+h1{
+font-size: 64px;
+font-weight:700;
+}
+h2{
+  font-size: 48px;
+  
+font-weight:700;
+}
+h3{
+  font-family:var(--Play),sans-serif ;
+  font-size: 36px;
+}
+h4{
+  font-size: 24px;
+  font-weight:700;
+}
+h5{
+  font-weight:700;
+  font-size:18px ;
+}
+
+p{
+  font-size: 18px;
+}
+/*SemiBold*/
+.subHead{
+  font-weight:600;
+  font-size: 16px;
+}
+.descrip{
+  font-family: var(--Play),sans-serif;
+  font-size: 16px;
+}
+
+main{
+  background-color: #84d7E6;
+}
+/**Header*/
+aside{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  border: var(--Subt) solid 1px;
+  justify-content: flex-end;
+}
+nav{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  
+}
+nav>div,div.search{
+ padding: 1.5rem 0; 
+ transition: all 200ms ease;
+}
+
+nav>div:hover{
+  box-shadow: inset 0px -5px 0px var(--AcCafe);
+}
+
+nav a.navLink,div.search{
+  text-decoration: none;
+  color: var(--Headlines);
+  font-size: 16px;
+  transition: all 200ms ease;
+}
+nav>div:hover a.navLink{
+  color: var(--AcCafe);
+
+}
+
+div.logoContainer{
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  gap: 0px;
+}
+div.logoImg{
+  background-color: var(--F1);
+  border-bottom: var(--Body) solid 1px;
+  padding: 0.5rem 1.2rem 0 1.2rem ;
+}
+div.logoImg img.logo{
+  height: 17vh;
+  
+}
+div.arrow{
+  clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0 50%, 0% 0%);
+  background-color: var(--Body);
+  color: var(--F1);
+  padding: 2rem 0rem 2rem 2rem;
+  width: 14rem;
+}
+div.arrow>h4{
+  margin-left: 1rem;
+}
+
+
+
+
