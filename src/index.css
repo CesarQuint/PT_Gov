@@ -84,6 +84,13 @@ nav>div:hover{
   box-shadow: inset 0px -5px 0px var(--AcCafe);
 }
 
+.pageSelected{
+  box-shadow: inset 0px -5px 0px var(--AcCafe);
+}
+.pagenoSelect{
+  box-shadow:none;
+}
+
 nav a.navLink,div.search{
   text-decoration: none;
   color: var(--Headlines);
@@ -225,6 +232,12 @@ div.alert{
 div.alert span:hover{
   cursor: pointer;
 }
+div.alert p{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  align-items: end;
+}
 
 
 .success{
@@ -240,6 +253,34 @@ div.alert span:hover{
   background-color: var(--AcAma);
   color: var(--AcCafe);
 }
+.Normal{
+  background-color: var(--F2);
+
+}
+
+/**Opcionales*/
+section.Options{
+  padding: 1rem 3rem;
+  background-color: var(--Subt);
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+}
+section.Options div.OptionContain{
+  display: flex;
+  flex-flow: row wrap;
+  gap:0.5rem;
+}
+section.Options div.OptionContain label[disabled]{
+  color: #797979;
+}
+
+section.Options div.OptionContain input[type=radio].a1{
+  accent-color:var(--AcVerA);
+
+}
+
+
 
 
 

@@ -5,7 +5,10 @@ function Form() {
     const [name,setName]=useState('')
     const [password,setPassword]=useState('')
     const [error,setError]=useState(false)
-    const [alerta,setAlerta]=useState({})
+    const [alerta,setAlerta]=useState({
+        msg:'Prueva de Default',
+        type:'Normal'
+    })
 
     const handleSubmit=e=>{
         e.preventDefault()
@@ -39,7 +42,7 @@ function Form() {
             {msg &&<Alerta alerta={alerta} setAlerta={setAlerta}/>}
             <div className='inputSec'>
                 <label htmlFor="">Name:</label>
-                <input className='a1'  type="text" 
+                <input className='a1' placeholder='Mi name is ..'  type="text" 
                 value={name}
                 onChange={e=>setName(e.target.value)}
                 required={error}
@@ -58,7 +61,14 @@ function Form() {
                 required={error}
                 disabled/>
             </div>
+            <div className='inputSec'>
+                <label disabled >Search</label>
+                <input className='a1' placeholder='Buscar...' type="search" 
+                required={error}/>
+            </div>
             <button type="submit">Subir</button>
+            {/*Seccion de eleccion Multiple */}
+           
         </form>
     </div>
   )
