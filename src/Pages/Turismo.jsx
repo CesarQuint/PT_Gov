@@ -1,8 +1,11 @@
 import React from 'react'
+import Lugares from '../Components/Lugares'
 
 function Turismo() {
   return (
-    <div>Turismo</div>
+    <main>
+      <Lugares/>
+    </main>
   )
 }
 

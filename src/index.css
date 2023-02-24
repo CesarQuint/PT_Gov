@@ -58,7 +58,7 @@ p{
 }
 
 main{
-  background-color: #84d7E6;
+  background-color:var(--F1);
 }
 /**Header*/
 aside{
@@ -193,6 +193,10 @@ div.form div.inputSec{
   gap: 0.5rem;
   padding: 1rem 0;
 }
+div.inputSec[disabled]{
+  color: var(--Subt);
+}
+
 div.inputSec input{
   border-radius: 0.5rem;
   padding: 0.7rem 0.5rem;
@@ -279,6 +283,181 @@ section.Options div.OptionContain input[type=radio].a1{
   accent-color:var(--AcVerA);
 
 }
+/**Botones*/
+button.descrip{
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+button.descrip.primario{
+  border: 2px solid var(--AcVerA);
+  background-color: var(--AcVerA);
+  transition:  all 300ms ease;
+}
+button.descrip.primario:hover{
+  background-color: var(--F1);
+  cursor: pointer;
+}
+button.descrip.primario[disabled]:hover{
+  background-color:var(--AcVerA);
+  cursor: not-allowed;
+}
+button.descrip.secundario{
+  border:  2px solid var(--Headlines);
+}
+
+button.descrip.secundario:hover{
+  border-color: var(--Subt);
+  color: var(--Subt);
+  transition:  all 300ms ease;
+  cursor: pointer;
+}
+button.descrip.secundario:disabled{
+  border-color:var(--Subt);
+  opacity: 70%;
+  color: initial;
+}
+button.descrip.secundario:disabled:hover{
+  border-color:var(--Subt);
+  cursor: not-allowed;
+
+}
+button.descrip.terciario{
+  border: none;
+  background-color: transparent;
+}
+button.descrip.terciario:hover{
+  color:var(--Subt);
+  transition:  all 300ms ease;
+  cursor: pointer;
+}
+button.descrip.terciario:disabled{
+  border-color:var(--Subt);
+  opacity: 70%;
+  color: initial;
+}
+button.descrip.terciario:disabled:hover{
+  border-color:var(--Subt);
+  cursor: not-allowed;
+
+}
+
+/** Directorio*/
+
+div.directorio{
+  /*!Retirar margin despues*/
+  width: 90%;
+  margin: auto;
+  border-radius: 0.4rem;
+  box-shadow: -1px -1px 7px 3px  #e4e4e4;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+div.directorio h5{
+  padding: 1rem;
+}
+
+div.directorio section.directionDates{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  padding: 0rem 2rem;
+}
+section.directionDates p.subHead.name{
+  color: var(--AcCafe);
+}
+
+section.phoneNumbers{
+  background-color: #f5f5f5;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.3rem;
+  padding: 0.7rem 1rem 1rem 2rem;
+}
+
+p.phone {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
+}
+p.phone span{
+  color: var(--AcCafe);
+}
+
+/**Label*/
+p.label{
+  padding: 0.4rem 1.5em;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+}
+p.label.default{
+  background-color: #e4e4e4;
+  color: var(--Subt);
+}
+
+p.label.exito{
+  background-color: #9dddd0;
+  color: var(--AcVerA);
+}
+p.label.alerta{
+  background-color:var(--AcAma);
+  color: var(--AcCafe);
+}
+p.label.error{
+  color: rgb(73, 16, 16);
+}
+/**Servicios*/
+div.tramiteSec{
+  display: flex;
+  flex-flow: row wrap;
+  gap:1rem;
+  box-shadow: -1px -1px 7px 3px  #e4e4e4;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.3rem;
+}
+
+div.tramiteSec section.Icono{
+  padding: 0.7rem 0.7rem 0.7rem 1rem;
+}
+
+div.Tramite_text{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+section.tags{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem ;
+}
+/**Lugares Table*/
+div.lugaresDiv{
+  display: grid;
+ grid-template-areas: 'side main main main';
+}
+div.lugaresSide{
+  grid-area:side ;
+}
+div.lugaresMain{
+  grid-area: main;
+}
+
 
 
 

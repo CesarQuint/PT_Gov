@@ -1,5 +1,7 @@
 import {useState} from 'react'
 import Alerta from './Alerta'
+import Input from './Input'
+import Button from './Button'
 
 function Form() {
     const [name,setName]=useState('')
@@ -9,6 +11,9 @@ function Form() {
         msg:'Prueva de Default',
         type:'Normal'
     })
+    const[disable,setDisable]=useState(true)
+
+    //TODO: Agregar funcionalidad Disabled'
 
     const handleSubmit=e=>{
         e.preventDefault()
@@ -40,35 +45,24 @@ function Form() {
     <div className='form'>
         <form onSubmit={handleSubmit} action="">
             {msg &&<Alerta alerta={alerta} setAlerta={setAlerta}/>}
-            <div className='inputSec'>
-                <label htmlFor="">Name:</label>
-                <input className='a1' placeholder='Mi name is ..'  type="text" 
-                value={name}
-                onChange={e=>setName(e.target.value)}
-                required={error}
-                />
-            </div>
-            <div className='inputSec'>
-                <label >Password</label>
-                <input className='a1' placeholder='Password' type="password" 
-                value={password}
-                onChange={e=>setPassword(e.target.value)}
-                required={error}/>
-            </div>
-            <div className='inputSec  disabled'>
-                <label disabled >Disabled</label>
-                <input className='a1' placeholder='Password' type="password" 
-                required={error}
-                disabled/>
-            </div>
-            <div className='inputSec'>
-                <label disabled >Search</label>
-                <input className='a1' placeholder='Buscar...' type="search" 
-                required={error}/>
-            </div>
-            <button type="submit">Subir</button>
+
+            <Input
+            name={'Nombre'} value={name} set={setName} type={'text'} error={error}
+            />
+          
+           <Input
+           name={'Password'} value={password} set={setPassword} type={'password'} error={error}
+           />
+            <Input
+            name={'Disabled'} type={'text'} error={error} disable={disable}
+            />
+            <Input
+            name={'Search'} value={''} set={''} type={'search'} error={''}
+            />
             {/*Seccion de eleccion Multiple */}
-           
+           <Button type={'primario'}/>
+           <Button type={'secundario'}/>
+           <Button type={'terciario'}/>
         </form>
     </div>
   )
