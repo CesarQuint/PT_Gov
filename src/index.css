@@ -65,7 +65,7 @@ aside{
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
-  padding: 0rem 1rem;
+  padding: 0rem 4rem 0rem 0rem;
   border: var(--Subt) solid 1px;
   justify-content: flex-end;
 }
@@ -120,6 +120,131 @@ div.arrow{
 div.arrow>h4{
   margin-left: 1rem;
 }
+/**Footer*/
+footer{
+  padding: 2rem 1rem;
+  background-color: var(--Body);
+}
+footer aside{
+  border: none;
+}
+footer section.upFoot{
+  padding: 0 2rem 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 2px solid var(--F2);
+  justify-content: space-between;
+}
+.santiago{
+  display: flex;
+  flex-flow: row wrap;
+}
+div.nombres{
+  display: flex;
+  align-items: flex-end;
+  color: var(--AcCafe);
+}
+aside.contactArea{
+  color: var(--F2
+  );
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  
+}
+aside.contactArea a{
+  text-decoration: none;
+  color: var(--F2);
+}
+section.lowFoot{
+  color: var(--F2);
+  display: flex;
+  justify-content: space-between;
+  padding:1rem 6rem 1rem 2rem ;
+}
+div.terminos{
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+div.terminos p{
+  border-right: 1px solid white;
+  padding: 0 1rem;
+}
+div.terminos p:last-child{
+  border: none;
+}
+
+/**Formulario*/
+div.form{
+  padding: 10rem 2rem;
+  
+}
+div.form div.inputSec{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+div.inputSec input{
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.5rem;
+  border: 2px solid #797979;
+  font-size:medium;
+}
+div.inputSec input.a1:focus{
+  border-color: var(--AcVerA);
+  box-shadow: 0 1px 1px var(--AcVerA);
+  outline: 0 none;
+}
+div.inputSec input.a1:invalid{
+  border-color: var(--AcRoj);
+  box-shadow: 0 1px 1px var(--AcRoj);
+  outline: 0 none;
+}
+
+div.inputSec.disabled{
+ color: var(--Subt);
+}
+
+div.inputSec input.a1:disabled{
+  background-color: var(--F2);
+  cursor:not-allowed;
+}
+
+/**Alertas*/
+div.alert{
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+div.alert span:hover{
+  cursor: pointer;
+}
+
+
+.success{
+  background-color: var(--AcVerA);
+  color: var(--F1);
+}
+
+.error{
+  background-color: var(--AcRoj);
+  color: var(--F1);
+}
+.advice{
+  background-color: var(--AcAma);
+  color: var(--AcCafe);
+}
+
+
+
+
+
 
 
 

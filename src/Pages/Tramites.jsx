@@ -1,8 +1,11 @@
 import React from 'react'
+import Form from '../Components/Form'
 
 function Tramites() {
   return (
-    <div>Tramites</div>
+    <>
+        <Form/>
+    </>
   )
 }
 
