@@ -449,7 +449,9 @@ section.tags{
 /**Lugares Table*/
 div.lugaresDiv{
   display: grid;
- grid-template-areas: 'side main main main';
+  grid-template-areas: 'side main main main';
+  width: 90%;
+  margin: auto;
 }
 div.lugaresSide{
   grid-area:side ;
@@ -457,6 +459,78 @@ div.lugaresSide{
 div.lugaresMain{
   grid-area: main;
 }
+div.lugaresAtt{
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid var(--AcAz);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+div.lugaresAtt:hover{
+  background-color: var(--F2);
+  cursor: pointer;
+}
+
+div.lugaresAtt span{
+  color: var(--AcAz);
+  font-size: larger;
+}
+
+div.lugaresAtt:last-child{
+  border-bottom:none;
+}
+/**Lugares Card*/
+div.cardLugares{
+  width:55vw;
+  margin: auto;
+  padding: 1rem 2rem;
+  box-shadow: -1px -1px 7px 3px  #e4e4e4;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  border-radius: 0.3rem;
+}
+section.time_phone{
+display: flex;
+flex-flow: row wrap;
+}
+section.time_phone p{
+  padding: 0 0.5rem;
+}
+
+/**Welcome Panel*/
+div.welcome{
+  padding: 5rem 1rem 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  background-color:#d4d5f0;
+}
+div.welcome div,section{
+  border: none;
+}
+div.welcome section.welcomeTitle{
+  width: 40%;
+  padding: 0 0 0 8rem;
+}
+div.hexContan{
+  position: relative;
+  overflow: hidden;
+}
+div.hexagonBorder{
+height: 20rem;
+width: 20rem;
+background-color: var(--AcVio);
+position: absolute;
+right: -5rem;
+top: 7rem;
+transform: rotate(45deg);
+}
+img.welcomeImage{
+  width: 10rem;
+  border-image-slice: fill;
+}
+
 
 
 
