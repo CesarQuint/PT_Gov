@@ -14,6 +14,7 @@ function DIF() {
           </div>
           
         </article>
+        <h3>Conoce los diferentres centros del DIF ,sus cursos y actividades</h3>
       </section>
     </>
   )

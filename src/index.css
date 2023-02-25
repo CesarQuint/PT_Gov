@@ -545,12 +545,12 @@ section.bodyDef{
 }
 
 article.articleDef{
- 
   display: flex;
   flex-flow: row wrap;
   gap: 3rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 div.hexArticle{
   width: 7rem;
@@ -563,15 +563,3 @@ div.hexArticle{
 div.articleText{
   width: 60%;
 }
-
-
-
-
-
-
-
-
-
-
-
-

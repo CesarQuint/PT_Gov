@@ -1,6 +1,7 @@
 import React from 'react'
 import Hexagon from '../assets/img/Hexagon.png'
 import { Link } from 'react-router-dom'
+import { CiFacebook as Face,CiInstagram as Insta,CiTwitter as Twitter,CiYoutube as Youtube } from "react-icons/ci";
 
 function Footer() {
   return (
@@ -19,10 +20,10 @@ function Footer() {
                 <p className='subHead'>Buzon de Sugerencias</p>
                 <p className='subHead'>Atencion ciudadana: +52(81) 2285 0004</p>
                 <nav>
-                    <Link>f</Link>
-                    <Link>t</Link>
-                    <Link>y</Link>
-                    <Link>i</Link>
+                    <Link><Face/></Link>
+                    <Link><Twitter/></Link>
+                    <Link><Youtube/></Link>
+                    <Link><Insta/></Link>
                 </nav>
                 
             </aside>
