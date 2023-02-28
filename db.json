@@ -1,0 +1,51 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" },
+    "difServices":[
+        {
+            "id":1,
+            "name":"Reparacion y Apertura de iluminarias,Arbotantes Nuevos y Usados"
+        },
+        {
+            "id":2,
+            "name":"Reparacion y Apertura de iluminarias,Arbotantes Nuevos y Usados 2"
+        },
+        {
+            "id":3,
+            "name":"Reparacion y Apertura de iluminarias,Arbotantes Nuevos y Usados"
+        },
+        {
+            "id":4,
+            "name":"Lorem Ipsum es simplemente el texto de relleno de las"
+        },
+        {
+            "id":5,
+            "name":"paquetes de autoedición y editores de páginas"
+        },
+        {
+            "id":6,
+            "name":"Latin de la Universidad de Hampden-Sydney en Virginia,"
+        },
+        {
+            "id":7,
+            "name":"Las secciones 1.10.32 y 1.10.33 de"
+        },
+        {
+            "id":8,
+            "name":"Reparacion y Apertura de iluminarias,Arbotantes Nuevos y Usados"
+        },
+        {
+            "id":9,
+            "name":" su texto por defecto, y al hacer una búsqueda de"
+        },
+        {
+            "id":10,
+            "name":"Todos los generadores de Lorem Ipsum que se encuentran"
+        }
+    ]
+  }

@@ -1,6 +1,9 @@
-import React from 'react'
+import {useState,useEffect} from 'react'
 import WelcomePanel from '../Components/WelcomePanel'
 import CentroDif from '../Components/CentroDif'
+import TramitesCarousel from '../Components/TramitesCarousel'
+import getTramites from '../db/Tramites'
+
 
 //!Zona de DB temporal
 
@@ -24,6 +27,17 @@ const ctrDIF={
 
 //TODO:Agregar props a las secciones
 function DIF() {
+  const [arrCarousel,setArrCarousel]=useState([])
+
+  useEffect(()=>{
+    const carga =async()=>{
+      const data=await getTramites()
+      setArrCarousel(data)
+    }
+    carga()
+  },[])
+  console.log(arrCarousel);
+  
   return (
     <>
       <WelcomePanel/>
@@ -44,11 +58,14 @@ function DIF() {
             <option value="1"> --Opciones 1 -- </option>
             <option value="2"> --Opciones 2 -- </option>
           </select>
-          {/*Agregar db de consulta para los eventos y para la carga de iconos */}
+          {/*Agregar db de consulta para los eventos y para la carga de iconos y hacer este componente iterable */}
           <CentroDif ctrDIF={ctrDIF}/>
           <CentroDif ctrDIF={ctrDIF}/>
           <CentroDif ctrDIF={ctrDIF}/>
         </div>
+        <TramitesCarousel
+        arrCarousel={arrCarousel}
+        />
       </section>
     </>
   )

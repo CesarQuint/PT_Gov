@@ -3,7 +3,6 @@ import ActividadDIF from './ActividadDIF';
 
 function CentroDif({ctrDIF}) {
     const {actividades}=ctrDIF
-    console.log(actividades);
   return (
     <>
     <article className='centroDif'>
