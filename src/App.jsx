@@ -1,6 +1,6 @@
 import {Route,BrowserRouter as Router,Routes} from 'react-router-dom'
 import Layout from './Layout/Layout'
-import Index from './pages/Index'
+import Index from './Pages/Index'
 import DIF from './Pages/DIF'
 import Turismo from './Pages/Turismo'
 import Tramites from './Pages/Tramites'
