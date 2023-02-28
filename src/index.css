@@ -532,7 +532,7 @@ div.hexImg::before{
   clip-path: polygon(40% 0, 25% 50%, 40% 100%, 25% 100%, 10% 50%, 25% 0%);
   background-color: var(--AcVio);
   width: 35rem;
-  height: -webkit-fill-available;
+  height:-webkit-fill-available;
   top: 0;
   left: -1rem;
 }
@@ -581,13 +581,34 @@ option{
   padding: 0.5rem 0.3rem;
   color: var(--AcRoj);
 }
+
+div.selectSection{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
 /** Centro Dif*/
+article.centroDif{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+section.centroDifImg{
+  background-image: url('../src/assets/img/Cat.jpg');
+  width: 25%;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  box-shadow: -3px 0px 7px 3px #e4e4e4;
+}
 
 div.centroDifContainer{
    display: flex;
    flex-flow: column;
    padding: 1rem;
-   box-shadow: -1px -1px 7px 3px  #e4e4e4;
+   box-shadow:3px 0px 7px 3px #e4e4e4;
+   width: 60%;
 }
 
 section.centroDifDescrip{

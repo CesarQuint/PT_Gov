@@ -22,7 +22,7 @@ const ctrDIF={
 }
 
 
-//TODO:Agregar valores  variables
+//TODO:Agregar props a las secciones
 function DIF() {
   return (
     <>
@@ -44,6 +44,9 @@ function DIF() {
             <option value="1"> --Opciones 1 -- </option>
             <option value="2"> --Opciones 2 -- </option>
           </select>
+          {/*Agregar db de consulta para los eventos y para la carga de iconos */}
+          <CentroDif ctrDIF={ctrDIF}/>
+          <CentroDif ctrDIF={ctrDIF}/>
           <CentroDif ctrDIF={ctrDIF}/>
         </div>
       </section>
