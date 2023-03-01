@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Cabildo_Card() {
+function Cabildo_Card({persona}) {
   return (
-    <div>Cabildo_Card</div>
+    <div className='card'>
+
+    </div>
   )
 }
 
