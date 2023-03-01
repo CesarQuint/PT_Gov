@@ -84,6 +84,35 @@ nav>div,div.search{
 
 nav>div:hover{
   box-shadow: inset 0px -5px 0px var(--AcCafe);
+  position: relative;
+}
+
+div.subMenu{
+  display: none;
+}
+
+div.subMenu:hover{
+  display: flex !important;
+  
+}
+div.subMenu a{
+  text-decoration: none;
+  color: var(--Body);
+  padding: 1rem;
+  border-bottom: 1px solid var(--Subt);
+  transition:all 500ms ease;
+}
+div.subMenu a:hover{
+  background-color:#dfdfdf;
+}
+nav>div:hover div.subMenu{
+  display: flex !important;
+  position: absolute;
+  top:4.2rem;
+  flex-flow: column wrap;
+  background-color: var(--F1);
+  width: 150%;
+  box-shadow: -1px 7px 6px 2px var(--Body);
 }
 
 .pageSelected{

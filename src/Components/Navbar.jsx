@@ -7,8 +7,16 @@ function bar() {
   return (
     <aside>
     <nav>
-        <div className={`  ${location.pathname=='/GobiernoMunicipal'?'pageSelected':'pagenoSelect'}`}>
-        <Link  to='GobiernoMunicipal' className={`  navLink`}>Gobierno Municipal</Link>
+        <div className={`${location.pathname.includes('GobiernoMunicipal')?'pageSelected':'pagenoSelect'}`}>
+          {/*Cambiar este primer Link por un div */}
+        <Link disabled  to='' className={`navLink`}>Gobierno Municipal</Link>
+        <div className='subMenu'>
+          <Link to="GobiernoMunicipal/Cabildo">Cabildo</Link>
+          <Link to="GobiernoMunicipal/Secretarias">Secretarias</Link>
+          <Link to="GobiernoMunicipal/Directorio">Comisiones</Link>
+          <Link to="/">Directorio</Link>
+        </div>
+       
         </div>
         <div
         className={`  ${location.pathname=='/Tramites-y-Servicios'?'pageSelected':'pagenoSelect'}`}

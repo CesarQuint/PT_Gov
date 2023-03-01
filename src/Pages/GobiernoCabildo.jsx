@@ -9,7 +9,7 @@ import getCabildo from '../db/Cabildo'
 import Cafe from '../assets/img/Cafe.jpg'
 
 
-function Gobierno() {
+function GobiernoCabildo() {
 
   const[cabildoPeople,setCabildoPeople]=useState([])
 
@@ -48,4 +48,4 @@ function Gobierno() {
   )
 }
 
-export default Gobierno
+export default GobiernoCabildo

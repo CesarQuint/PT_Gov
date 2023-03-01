@@ -103,5 +103,73 @@
             ],
             "ext":"1116"
         }
+    ],
+    "comisiones":[
+        {
+            "comision":"Gobernacion y Reglamento",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 2",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 3",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 4",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 5",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 6",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 7",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 8",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 9",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 10",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        },
+        {
+            "comision":"Gobernacion y Reglamento 11",
+            "presidente":"Edgar Marcial Torres",
+            "secretario":"Jorge Albedo Flores",
+            "vocal":"Ruth Lopez Capado"
+        }
     ]
   }

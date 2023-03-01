@@ -6,7 +6,7 @@ function Cabildo_Card({data}) {
   return (
     <div className='card'>
       <div className='upCard'>
-        <div className='imgCabildo' style={{backgroundImage:`url(src/assets/img/${photo}.jpg)`}} ></div>
+        <div className='imgCabildo' style={{backgroundImage:`url(/src/assets/img/${photo}.jpg)`}} ></div>
         <aside className='namePosition'>
           <h5>{name}</h5>
           <p className='descrip'>{posicion}</p>

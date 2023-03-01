@@ -6,7 +6,7 @@ import Turismo from './Pages/Turismo'
 import Tramites from './Pages/Tramites'
 import Noticias from './Pages/Noticias'
 import Contacto from './Pages/Contacto'
-import Gobierno from './Pages/Gobierno'
+import GobiernoCabildo from './Pages/GobiernoCabildo'
 
 function App() {
   
@@ -15,7 +15,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<Index/>}/>
-          <Route path='/GobiernoMunicipal' element={<Gobierno/>}/>
+          {/*Rutas de Gobierno Municipal*/}
+          <Route path='/GobiernoMunicipal/Cabildo' element={<GobiernoCabildo/>}/>
+          {/*Rutas de Tramites */}
           <Route path='/Tramites-y-Servicios' element={<Tramites/>}/>
           <Route path='/Noticias-y-Eventos' element={<Noticias/>}/>
           <Route path='/DIF' element={<DIF/>}/>
