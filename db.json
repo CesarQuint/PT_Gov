@@ -47,5 +47,55 @@
             "id":10,
             "name":"Todos los generadores de Lorem Ipsum que se encuentran"
         }
+    ],
+    "cabildo":[
+        {
+            "name":"Andres Martin Salazar",
+            "posicion":"Cuarta Regidora",
+            "numeros":[
+                "(22)23456542","(87)23476542"
+            ],
+            "ext":"1012"
+        },
+        {
+            "name":"Rafael Martin Salazar",
+            "posicion":"Cuarta Regidora",
+            "numeros":[
+                "(22)23456542","(87)23476542"
+            ],
+            "ext":"1012"
+        },
+        {
+            "name":"Julia Altamirano Pacheco",
+            "posicion":"Cuarta Regidora",
+            "numeros":[
+                "(22)23456542","(87)23476542"
+            ],
+            "ext":"1012"
+        },
+        {
+            "name":"Tania Naomi Quintero Fuentes",
+            "posicion":"Cuarta Regidora",
+            "numeros":[
+                "(22)23456542","(87)23476542"
+            ],
+            "ext":"1012"
+        },
+        {
+            "name":"Angel Uriel Quintero Fuentes",
+            "posicion":"Cuarta Regidora",
+            "numeros":[
+                "(22)23456542","(87)23476542"
+            ],
+            "ext":"1116"
+        },
+        {
+            "name":"Pedro Quintero Barrles",
+            "posicion":"Cuarta Regidora",
+            "numeros":[
+                "(22)23456542","(87)23476542"
+            ],
+            "ext":"1116"
+        }
     ]
   }

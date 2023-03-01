@@ -4,6 +4,7 @@ import CentroDif from '../Components/CentroDif'
 import TramitesCarousel from '../Components/TramitesCarousel'
 import getTramites from '../db/Tramites'
 
+import Cat from '../assets/img/Cat.jpg'
 
 //!Zona de DB temporal
 
@@ -40,7 +41,13 @@ function DIF() {
   
   return (
     <>
-      <WelcomePanel/>
+      <WelcomePanel
+      bgColor={" rgba(177, 179, 219, 0.15)"} 
+      borderColor={"var(--AcVio)"}
+      Img={Cat}
+      title={'Desarrollo Integral De la Familia'}
+      />
+
       <section className='bodyDef'>
         <article className='articleDef'>
           <div className='hexArticle'></div>

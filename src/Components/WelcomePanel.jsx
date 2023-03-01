@@ -1,15 +1,17 @@
 import React from 'react'
-import Cat from '../assets/img/Cat.jpg'
 
-function WelcomePanel() {
+function WelcomePanel({bgColor,borderColor,Img,title}) {
     //TODO:Mejorar la flexibilidad de la imagen de fondo
   return (
-    <div className='welcomeContain'>
+    <div className='welcomeContain'
+      style={{backgroundColor:`${bgColor}`}}
+    >
         <div className='welcome'>
             <section className='welcomeTitle'>
-                <h2>Desarrollo Integral de La Familia</h2>
+                <h2>{title}</h2>
             </section>
-            <div className='hexImg' style={{}}></div>
+            <div className='hexImg' style={{backgroundImage:`url('${Img}')`,
+              backgroundColor:`${borderColor}`}}></div>
         </div>
         
     </div>

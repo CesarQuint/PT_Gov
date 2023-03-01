@@ -1,3 +1,5 @@
+/*!TODO:Realizar una optimizacion de componentes con clases generales que puedan ser integradas */
+
 :root{
   --Ral:'Raleway';
   --Play:'Playfair Display';
@@ -523,14 +525,13 @@ div.hexImg{
   width: 35rem;
   background-color: var(--AcVio);
   clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 10% 50%, 25% 0%);
-  background-image: url('./assets/img/Cat.jpg');
   background-size: cover;
 }
 div.hexImg::before{
   content: '';
   position: absolute;
   clip-path: polygon(40% 0, 25% 50%, 40% 100%, 25% 100%, 10% 50%, 25% 0%);
-  background-color: var(--AcVio);
+  background-color: inherit;
   width: 35rem;
   height:-webkit-fill-available;
   top: 0;
@@ -670,4 +671,12 @@ div.carouselCard img{
 }
 div.carouselCard p{
   opacity: 40%;
+}
+
+/**Card Section*/
+.card{
+  box-shadow:3px 0px 7px 3px #e4e4e4;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
 }
