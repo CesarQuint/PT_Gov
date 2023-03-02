@@ -47,9 +47,6 @@ function GobiernoCabildo() {
         ))}
       </div>
       
-      
-      <Comisiones_Card/>
-      <Secretaria_Card/>
     </section>
     </>
   )

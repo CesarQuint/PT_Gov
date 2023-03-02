@@ -704,7 +704,7 @@ div.carouselCard p{
   opacity: 40%;
 }
 
-/**Card Section*/
+/**Card Cabildo Section*/
 div.card{
   box-shadow:3px 0px 7px 3px #e4e4e4;
   display: flex;
@@ -758,27 +758,25 @@ div.cabildoGrid{
   gap: 1rem;
 }
 
+/**Card Comisiones*/
+section.comisionesUpCard{
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;  
+  align-items: center;
+}
+section.comisionesLowCard{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  padding: 0 1rem 1rem;
+}
+
 /**Gobierno Clases Section*/
 div.titleGobierno{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  display: flex;
+  gap: 1rem;
 }
 
-div.titleGobierno h3{
-  grid-area: 1 / 1 / 2 / 3;
-}
-
-div.lineNext{
-  grid-area: 1 / 3 / 2 / 4;
-  grid-area: 2fr;
-  position: relative;
-}
-div.lineNext::after{
-  top: 1.5rem;
-  content: '';
-  position: absolute;
-  background-color:var(--Headlines);
-  height: 0.5rem;
-  width: 100%;
-}
 
