@@ -7,6 +7,9 @@ import Tramites from './Pages/Tramites'
 import Noticias from './Pages/Noticias'
 import Contacto from './Pages/Contacto'
 import GobiernoCabildo from './Pages/GobiernoCabildo'
+import GobiernoDirectorio from './Pages/GobiernoDirectorio'
+import GobiernoComisiones from './Pages/GobiernoComisiones'
+import GobiernoSecretarias from './Pages/GobiernoSecretarias'
 
 function App() {
   
@@ -17,6 +20,9 @@ function App() {
           <Route index element={<Index/>}/>
           {/*Rutas de Gobierno Municipal*/}
           <Route path='/GobiernoMunicipal/Cabildo' element={<GobiernoCabildo/>}/>
+          <Route path='/GobiernoMunicipal/Secretarias' element={<GobiernoSecretarias/>}/>
+          <Route path='/GobiernoMunicipal/Comisiones' element={<GobiernoComisiones/>}/>
+          <Route path='/GobiernoMunicipal/Directorio' element={<GobiernoDirectorio/>}/>
           {/*Rutas de Tramites */}
           <Route path='/Tramites-y-Servicios' element={<Tramites/>}/>
           <Route path='/Noticias-y-Eventos' element={<Noticias/>}/>

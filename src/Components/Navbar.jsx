@@ -9,12 +9,12 @@ function bar() {
     <nav>
         <div className={`${location.pathname.includes('GobiernoMunicipal')?'pageSelected':'pagenoSelect'}`}>
           {/*Cambiar este primer Link por un div */}
-        <Link disabled  to='' className={`navLink`}>Gobierno Municipal</Link>
+        <Link disabled  className={`navLink`}>Gobierno Municipal</Link>
         <div className='subMenu'>
           <Link to="GobiernoMunicipal/Cabildo">Cabildo</Link>
           <Link to="GobiernoMunicipal/Secretarias">Secretarias</Link>
-          <Link to="GobiernoMunicipal/Directorio">Comisiones</Link>
-          <Link to="/">Directorio</Link>
+          <Link to="GobiernoMunicipal/Comisiones">Comisiones</Link>
+          <Link to="GobiernoMunicipal/Directorio">Directorio</Link>
         </div>
        
         </div>

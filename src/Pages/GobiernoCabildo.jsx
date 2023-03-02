@@ -25,12 +25,19 @@ function GobiernoCabildo() {
   return (
     <>
     <WelcomePanel
-    bgColor={"#F3F3F3"} 
+    bgColor={"#f7efe8"} 
     borderColor={"var(--AcCafe)"}
     Img={Cafe}
     title={'Integrantes del Cabildo'}
     />
     <section className='bodyDef'>
+      
+      <div className='titleGobierno'>
+        <h3>Conoce a los Integrantes del cabildo 2018-2021</h3>
+        <div className='lineNext'>
+        </div>
+      </div>
+     
       <div className='cabildoGrid'>
         {cabildoPeople.map(el=>(
           <Cabildo_Card
